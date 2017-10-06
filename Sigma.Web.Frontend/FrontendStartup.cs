@@ -6,15 +6,15 @@ namespace Sigma.Web.Frontend
     using Microsoft.Owin.FileSystems;
     using Microsoft.Owin.StaticFiles;
     using Owin;
-    using Microsoft.Owin.Security.DataProtection;
-    using Sigma.Web.Http.DataProtection;
 
     public class FrontendStartup
     {
         public virtual void Configuration(IAppBuilder app)
         {
             // app.UseCommonLogging();
-            app.SetDataProtectionProvider(new MachineKeyDataProtectionProvider());
+
+            // https://www.majormojo.co.uk/blog/deploying-application-and-owin-authorization-server-on-separate-machines.html
+            // app.SetDataProtectionProvider(new MachineKeyDataProtectionProvider());
 
             WebApiBootstrap.Configuration(app);
             this.ConfigureWeb(app);

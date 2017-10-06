@@ -107,8 +107,6 @@
   <ItemGroup>
     <Compile Include="Controllers\ValueController.cs" />
     <Compile Include="WepApiBootstrap.cs" />
-    <Compile Include="Http\DataProtection\MachineKeyDataProtectionProvider.cs" />
-    <Compile Include="Http\DataProtection\MachineKeyDataProtector.cs" />
     <Compile Include="Http\Dispatcher\ExplicitAssembliesResolver.cs" />
     <Compile Include="Http\Dispatcher\HttpNotFoundAwareControllerActionSelector.cs" />
     <Compile Include="Http\Dispatcher\HttpNotFoundAwareControllerSelector.cs" />
